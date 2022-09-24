@@ -1,0 +1,38 @@
+<DOCTYPE html>
+<html>
+     <head> 
+	    <title>janji ga nangiss</title>
+	 <head>
+	 <body> 
+	    <h2>GALAU KARNA GABISA DAPETIN DIA</h2>
+		<p>
+		<button onclick="playVid()">PLAY VIDIO</button>
+		<button onclick="pauseVid()">PAUSE VIDIO</button>
+		<button onclick="enableCon()">AKTIFKAN KONTROL</button>
+		<button onclick="disableCon()">MATIKAN KONTROL</button>S
+		</p>
+		<video id= "myVideo">
+		       <source src="galau.mp4" type="video/mp4">
+			   </video>
+	    </body>
+		<script>
+		var vid = document.getElementById("myVideo");
+		function durationVid() {
+		         alert(vid.duration);
+		}
+		function playVid() {
+		vid.play();
+		}
+		function.pauseVid() {
+		vid.pause();
+		}
+		function enableCon () {
+		vid.controls = true;
+		vid.load();
+		}
+		function disableCon() {
+		vid.controls = false;
+		vid.load();
+		}
+		</script>
+</html>
